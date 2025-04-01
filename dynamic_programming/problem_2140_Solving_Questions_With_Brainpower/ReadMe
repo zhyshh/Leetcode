@@ -44,7 +44,7 @@ Constraints:
 Solution:
 This is a 1D DP problem, similar as house robbery, either take the current point and go to next=brainpoweri]+1, or not take current
 Recursion:
-maxPoint(i) = max(maxPoint(i+1),questions[i][0]+maxPoint(i+questions[i][1]+1)
+maxPoint(i) = max(maxPoint(i+1),questions[i][0]+maxPoint(i+questions[i][1]+1))
 
 Iteration, backwards:
 dp[i] = max(dp[i+1],quesitons[i][0]+dp[i+qeustions[i][1]+1])
